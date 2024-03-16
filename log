@@ -78,3 +78,18 @@ Sat 16 Mar 2024 04:24:09 PM UTC:
  tests:  0|4
 total_score: 30/70
 e9107b7
+Sat 16 Mar 2024 04:27:28 PM UTC: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:71:8: error: unused variable ‘nuevoArr’ [-Werror=unused-variable]
+   71 |   int* nuevoArr = (int *)malloc(talla * sizeof(int));
+      |        ^~~~~~~~
+exercises.c: At top level:
+exercises.c:102:37: error: expected identifier or ‘(’ before ‘}’ token
+  102 |                                     }
+      |                                     ^
+cc1: all warnings being treated as errors
+Compilation failed
+2522e70
