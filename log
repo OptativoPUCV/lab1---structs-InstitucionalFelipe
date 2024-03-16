@@ -204,3 +204,15 @@ Sat 16 Mar 2024 04:48:03 PM UTC:
  tests:  0|3
 total_score: 40/70
 20f2341
+Sat 16 Mar 2024 04:59:00 PM UTC: 
+ exercises.c | 13 +++++++++----
+ 1 file changed, 9 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:114:9: error: ‘desendente’ undeclared (first use in this function); did you mean ‘descendente’?
+  114 |         desendente += 1;
+      |         ^~~~~~~~~~
+      |         descendente
+exercises.c:114:9: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+6d57434
