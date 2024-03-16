@@ -175,7 +175,7 @@ Nodo *crearListaEnlazada(int arr[], int size) {
   Nodo *cabeza = NULL; //es *cabeza porque esta variable almacenara la direccion del primer nodo.
   Nodo *actual, *ultimo = NULL;
 
-  for(i = 0; i < size; i++)
+  for(int i = 0; i < size; i++)
     {
       actual = (Nodo *)malloc(sizeof(Nodo)); //se reserva memoria para un nodo. El motivo por el que simplemente se usa malloc es porque necesitamos que lo que guarda el nodo no se elimine a la hora de cerrar la funcion, por esto utilizamos la memoria Heap.
       actual->numero = arr[i];
