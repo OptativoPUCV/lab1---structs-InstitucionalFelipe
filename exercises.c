@@ -171,4 +171,22 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size) { 
+  Nodo *cabeza = NULL; //es *cabeza porque esta variable almacenara la direccion del primer nodo.
+  Nodo *actual, *ultimo = NULL;
+
+  for(i = 0; i < size; i++)
+    {
+      actual = (Nodo *)malloc(sizeof(Nodo)); //se reserva memoria para un nodo. El motivo por el que simplemente se usa malloc es porque necesitamos que lo que guarda el nodo no se elimine a la hora de cerrar la funcion, por esto utilizamos la memoria Heap.
+      actual->numero = arr[i];
+      actual->siguiente = NULL;//como el ultimo nodo debe apuntar a NULL, se inicializa como NULL.
+      if(cabeza == NULL)
+        cabeza = actual;//si la lista esta vacia entonces el primer nodo(la cabeza) es el actual.
+      else
+        ultimo->siguiente = actual;//en cualquier otro caso, el ultimo nodo debe apuntar al actual. Notar que actual no lleva *, esto porque solo estamos guardando la direccion del nodo, no el contenido del nodo.
+      
+      ultimo = actual;//el ultimo nodo pasa a ser el actual.
+    }
+    
+  
+  return cabeza; }//nos pide retornar el primer nodo
