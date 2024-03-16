@@ -110,6 +110,7 @@ int checkSorted(int arr[], int size) {
     {
       if(arr[i] < arr[i + 1])
         ascendente += 1;
+        printf("%d", ascendente);
       else if(arr[i] > arr[i + 1])
         desendente += 1;
     }

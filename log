@@ -175,3 +175,20 @@ Sat 16 Mar 2024 04:45:59 PM UTC:
  tests:  0|3
 total_score: 40/70
 825dfe9
+Sat 16 Mar 2024 04:46:47 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:111:7: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  111 |       if(arr[i] < arr[i + 1])
+      |       ^~
+exercises.c:113:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  113 |         printf("%d", ascendente);
+      |         ^~~~~~
+exercises.c:114:7: error: ‘else’ without a previous ‘if’
+  114 |       else if(arr[i] > arr[i + 1])
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cf7bbd4
