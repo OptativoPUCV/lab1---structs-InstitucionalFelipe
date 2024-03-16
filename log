@@ -216,3 +216,9 @@ exercises.c:114:9: error: ‘desendente’ undeclared (first use in this functio
 exercises.c:114:9: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 6d57434
+Sat 16 Mar 2024 04:59:11 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|2
+total_score: 50/70
+77e938d

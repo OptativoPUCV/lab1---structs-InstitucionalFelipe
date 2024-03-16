@@ -111,7 +111,7 @@ int checkSorted(int arr[], int size) {
       if(arr[i] < arr[i + 1])
         ascendente += 1;
       else if(arr[i] > arr[i + 1])
-        desendente += 1;
+        descendente += 1;
       else
       {
         ascendente += 1;
