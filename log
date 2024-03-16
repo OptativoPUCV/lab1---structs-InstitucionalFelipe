@@ -124,3 +124,19 @@ exercises.c:122:3: error: ‘else’ without a previous ‘if’
       |   ^~~~
 Compilation failed
 aa794b2
+Sat 16 Mar 2024 04:40:49 PM UTC: 
+ exercises.c | 2 --
+ 1 file changed, 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:113:35: error: expected statement before ‘)’ token
+  113 |       else if(arr[i] > arr[i + 1]))
+      |                                   ^
+exercises.c:118:34: error: expected statement before ‘)’ token
+  118 |   else if(desendente == size - 1))
+      |                                  ^
+exercises.c:120:3: error: ‘else’ without a previous ‘if’
+  120 |   else
+      |   ^~~~
+Compilation failed
+215393e
