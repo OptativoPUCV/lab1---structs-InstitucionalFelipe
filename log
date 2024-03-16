@@ -108,3 +108,19 @@ Sat 16 Mar 2024 04:28:41 PM UTC:
  tests:  0|3
 total_score: 40/70
 a139c08
+Sat 16 Mar 2024 04:38:28 PM UTC: 
+ exercises.c | 19 ++++++++++++++++++-
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:115:35: error: expected statement before ‘)’ token
+  115 |       else if(arr[i] > arr[i + 1]))
+      |                                   ^
+exercises.c:120:34: error: expected statement before ‘)’ token
+  120 |   else if(desendente == size - 1))
+      |                                  ^
+exercises.c:122:3: error: ‘else’ without a previous ‘if’
+  122 |   else
+      |   ^~~~
+Compilation failed
+aa794b2
